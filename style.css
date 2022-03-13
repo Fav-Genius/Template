@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(rgba(0,0,0,0.5),#f875b6),url(./assets/istockphoto-582306382-612x612.jpeg);
+    background: linear-gradient(rgba(236, 245, 116, 0),#c1c49ad7),url(./assets/pint.jpeg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -139,7 +139,7 @@ body.active .wrapper .section{
 }
 
 .heading{
-    color: #f4fbff;
+    color: black;
 }
 
 .nav{
@@ -147,8 +147,7 @@ body.active .wrapper .section{
 }
 
 .nav ul li{
-
-    color: #f4fbff!important;
+    
     list-style-type: none;
     text-decoration: none;
     display: inline-block;
@@ -157,13 +156,15 @@ body.active .wrapper .section{
     
 }
 
-.nav ul li :hover{
-    color: #f875b6;
-}
-
 a{
     text-decoration: none;
-    font-size: 20px;  
+    font-size: 20px; 
+    color: black; 
+}
+
+
+.nav ul li :hover{
+    border-bottom: 2px solid black;
 }
 
 .banner{
@@ -193,7 +194,7 @@ a{
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #f4fbff;
+    color: black;
     letter-spacing: 1.5px;
     background-color: transparent;
     padding: 10px 20px;
@@ -204,5 +205,6 @@ a{
 
 .banner-text button:hover{
     background: black;
+    color: #f4fbff;
 }
 
