@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(rgba(236, 245, 116, 0),#c1c49ad7),url(./assets/pint.jpeg);
+    background: url(./assets/pint.jpeg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -19,9 +19,9 @@ body {
     background-position: center;
     height: 100vh;
 }
-
+ /* Start of My about page */
 .wrapper .sidebar{
-    background: #420122;
+    background: linear-gradient(rgba(193, 194, 187, 0),#420122),url(./assets/istockphoto-917174426-612x612.jpeg);
     position: fixed;
     top: 0;
     left: 0;
@@ -126,20 +126,20 @@ body.active .wrapper .section{
     width: 100%;
 }
 
+ /*  End of My about page */
+
+
 #logo{
     width: 90%;
     position: absolute;
-    
-    left: 5%;
-    font-size: 40px;
-}
-#logo div {
-    display: inline-block;
-    font-size: 60px;
+    left: 2%;
+    font-family: cursive;
 }
 
-.heading{
-    color: black;
+#logo div {
+    display: inline-block;
+    font-size: 70px;
+    font-weight: bold;
 }
 
 .nav{
@@ -158,7 +158,7 @@ body.active .wrapper .section{
 
 a{
     text-decoration: none;
-    font-size: 20px; 
+    font-size: 25px; 
     color: black; 
 }
 
@@ -184,10 +184,23 @@ a{
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1cm;
+   background-image: url(./assets/pint3.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#banner .nav .active{
+    background-image: url(./assets/pint3.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .banner-text p{
-    color:#f4fbff;
+    color:#090b0c;
 }
 
 .banner-text button{
@@ -199,7 +212,7 @@ a{
     background-color: transparent;
     padding: 10px 20px;
     border-radius: 20px;
-    border: 1px solid black;
+    border: 3px solid black;
     margin-top: 30px;
 }
 
