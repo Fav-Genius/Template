@@ -8,26 +8,117 @@
 }
 
 body {
-    background: url(./assets/pint.jpeg);
+    background:linear-gradient(rgba(193, 194, 187, 0),#420122),url(./assets/Backgroud-img.jpeg);
     background-size: cover;
-    background-position: center;
     height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-#about img{
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+#logo{
+    width: 90%;
+    position: fixed;
+    left: 2%;
+    font-family: cursive;
 }
+
+#logo div {
+    display: inline-block;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.heading p{
+    color: #290b1a; 
+    font-family: cursive;
+}
+
+
+.nav{
+    float: right;
+}
+
+.nav ul li{
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: -20px 30px 0 0;
+    margin: 0 20px 0 0;
+}
+
+a{
+    text-decoration: none;
+    font-size: 25px; 
+    color:#420122; 
+}
+
+
+.nav ul li :hover{
+    border-bottom: 2px solid black;
+}
+
+.banner{
+    width: 1100px;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.banner .banner-text{
+    width: 400px;
+}
+
+.banner-text h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2cm;
+    background-image: url(./assets/pint3.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#banner .nav .active-nav {
+    background-image: url(./assets/pint3.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.banner-text button{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 1.5px;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 3px solid black;
+    margin-top: 30px;
+}
+
+.banner-text button:hover{
+    background: black;
+    color: #f4fbff;
+}
+
+
+
  /* Start of My about page */
 .wrapper .sidebar{
-    background: linear-gradient(rgba(193, 194, 187, 0),#420122),url(./assets/istockphoto-917174426-612x612.jpeg);
-    position: fixed;
+    background: linear-gradient(rgba(193, 194, 187, 0),#420122), url(./assets/istockphoto-860587952-612x612.jpeg);
+    position: center;
     top: 0;
     left: 0;
     width: 225px;
-    height: 100%;
-    padding: 20px 0;
+    height: 100vh;
+    padding: 40px 0;
+    margin-top: 15px;
     transition: all 0.5s ease;
 }
 
@@ -76,19 +167,18 @@ background: white;
 cursor: pointer;
 }
 
-.wrapper .sidebar ul li a.active{
+.wrapper .sidebar ul li a .active{
 color: #f4fbff;
-border-right: 2px solid rgb(5, 68, 104);
+border-right: 2px solid rgb(242, 246, 248);
 cursor: pointer;
+}
+
+.wrapper .sidebar ul li a:hover .icon{
+    color: black;
 }
 
 .wrapper .sidebar ul li a.active .icon{
     color: #f4fbff;
-}
-
-.wrapper .sidebar ul li a:hover .icon
-{
-    color: black;
 }
 
 .wrapper .sidebar ul li a:hover :before, 
@@ -125,99 +215,10 @@ body.active .wrapper .section{
     margin-left: 0;
     width: 100%;
 }
+.container{
+    -moz-box-align: right;
+}
 
  /*  End of My about page */
 
-
-#logo{
-    width: 90%;
-    position: absolute;
-    left: 2%;
-    font-family: cursive;
-}
-
-#logo div {
-    display: inline-block;
-    font-size: 70px;
-    font-weight: bold;
-}
-
-.nav{
-    float: right;
-}
-
-.nav ul li{
-    
-    list-style-type: none;
-    text-decoration: none;
-    display: inline-block;
-    padding: -20px 30px 0 0;
-    margin: 0 20px 0 0;
-    
-}
-
-a{
-    text-decoration: none;
-    font-size: 25px; 
-    color: black; 
-}
-
-
-.nav ul li :hover{
-    border-bottom: 2px solid black;
-}
-
-.banner{
-    width: 1200px;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.banner .banner-text{
-    width: 400px;
-}
-
-.banner-text h1{
-    font-size: 40px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1cm;
-   background-image: url(./assets/pint3.jpeg);
-    background-size: cover;
-    background-position: bottom;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
-#banner .nav .active{
-    background-image: url(./assets/pint3.jpeg);
-    background-size: cover;
-    background-position: bottom;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
-.banner-text p{
-    color:#090b0c;
-}
-
-.banner-text button{
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: black;
-    letter-spacing: 1.5px;
-    background-color: transparent;
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: 3px solid black;
-    margin-top: 30px;
-}
-
-.banner-text button:hover{
-    background: black;
-    color: #f4fbff;
-}
-
+ 
